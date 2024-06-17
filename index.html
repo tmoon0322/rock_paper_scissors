@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        choice_map = { 
+            0: "rock", 
+            1: "paper", 
+            2: "scissor"
+        };
+
+        function get_player_choice() {
+            let player_choice = prompt('Type in "rock", "paper", or "scissor" to make your choice: ')
+        }
+
+        function getComputerChoice() {
+            let num = getRandomInt(3);
+            let bot_choice = choice_map[num]
+            return bot_choice
+        }
+        
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max)
+        }
+
+        console.log(getComputerChoice())
+
+
+
+
+
+    </script>
+</body>
+</html>
